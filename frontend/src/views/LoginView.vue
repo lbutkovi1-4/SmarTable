@@ -1,7 +1,7 @@
 <template>
   <div class="login-container">
     <div class="login-box">
-      <h1>🍽 SmartTable</h1>
+      <h1>🍽 SmarTable</h1>
       <h2>Prijava</h2>
 
       <form @submit.prevent="onSubmit">
@@ -31,7 +31,7 @@ const error = ref('')
 const router = useRouter()
 
 function onSubmit() {
-  if (email.value === 'admin@smarttable.com' && password.value === 'admin123') {
+  if (email.value === 'admin@smartable.com' && password.value === 'admin123') {
     localStorage.setItem('user', JSON.stringify({ email: email.value, role: 'admin' }))
     router.push('/dashboard')
   } else if (email.value && password.value.length >= 6) {
