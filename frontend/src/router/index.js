@@ -24,7 +24,12 @@ const router = createRouter({
 })
 
 router.beforeEach((to) => {
-  const user = JSON.parse(localStorage.getItem('user') || '{}')
+  const token = localStorage.getItem('smartable_token')
+  const user = JSON.parse(localStorage.getItem('smartable_user') || '{}')
+  
+  if (to.meta.requiresAuth && !token) {
+    return { name: 'login' }
+  }
   if (to.meta.requiresAdmin && user.role !== 'admin') {
     return { name: 'dashboard' }
   }
