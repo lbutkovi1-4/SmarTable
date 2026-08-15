@@ -36,7 +36,7 @@ def seed_admin():
             admin = models.User(
                 full_name="Administrator",
                 email="admin@smartable.com",
-                hashed_password=auth_utils.hash_password("admin123"),
+                hashed_password=auth_utils.hash_password("admin123"[:72]),
                 role=models.UserRole.admin,
             )
             db.add(admin)
