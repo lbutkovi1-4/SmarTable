@@ -1,20 +1,33 @@
 # SmartTable
 
-Web aplikacija za online rezervaciju stolova u restoranu.
+Web aplikacija za online rezervaciju stolova u restoranu i upravljanje rezervacijama.
 
 ## Autor / Tim
 - **Tim:** WA-356
 - **Član tima:** Lidia Butković
+- **Mentor:** doc. dr. sc. Nikola Tanković
+- **Fakultet:** Fakultet informatike u Puli
+- **Kolegij:** Web aplikacije
+- **Akademska godina:** 2025./2026.
 
 ## Tehnologije
-- Frontend: Vue.js
+- Frontend: Vue.js 3
 - Backend: Python (FastAPI)
 - Baza podataka: SQLite
 - Autentifikacija: JWT
 
+## Poveznice
+- **Frontend (Vercel):** https://smar-table.vercel.app
+- **Backend API:** https://smartable-eafa.onrender.com
+- **API Dokumentacija:** https://smartable-eafa.onrender.com/docs
+- **Video prezentacija:** []
+
 ## Opis
-SmartTable je web sustav za online rezervaciju stolova u restoranu namijenjen dvjema grupama korisnika: registriranim korisnicima (gostima restorana) i administratorima.
+SmarTable je web sustav za online rezervaciju stolova u restoranu namijenjen dvjema grupama korisnika: registriranim korisnicima i administratorima.
 
-Registrirani korisnici mogu kreirati račun, prijaviti se u sustav te pregledavati dostupne termine i kapacitete stolova prema datumu i broju osoba. Korisnik može napraviti novu rezervaciju, pregledati svoje postojeće rezervacije te ih po potrebi otkazati.
+## Admin pristup za testiranje
+- Email: admin@smartable.com
+- Lozinka: admin123
 
-Administratori mogu dodavati, uređivati i brisati stolove, pregledavati sve rezervacije u sustavu, mijenjati status rezervacije te upravljati korisnicima.
+
+
