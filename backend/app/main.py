@@ -45,12 +45,12 @@ def seed_admin():
         # Dodaj stolove ako ih nema
         if db.query(models.RestaurantTable).count() == 0:
             stolovi = [
-                models.RestaurantTable(name="Stol 1", capacity=2, description="Romantični kutak kraj prozora"),
-                models.RestaurantTable(name="Stol 2", capacity=4, description="Idealno za obitelj"),
-                models.RestaurantTable(name="Stol 3", capacity=6, description="Prostrani stol na terasi"),
-                models.RestaurantTable(name="Stol 4", capacity=8, description="Savršeno za grupne proslave"),
-                models.RestaurantTable(name="Stol 5", capacity=2, description="Tihi kutak u unutrašnjosti"),
-            ]
+    models.RestaurantTable(name="Stol 1", capacity=2, description="Romanticni kutak kraj prozora"),
+    models.RestaurantTable(name="Stol 2", capacity=4, description="Idealno za obitelj"),
+    models.RestaurantTable(name="Stol 3", capacity=6, description="Prostrani stol na terasi"),
+    models.RestaurantTable(name="Stol 4", capacity=8, description="Savrseno za grupne proslave"),
+    models.RestaurantTable(name="Stol 5", capacity=2, description="Tihi kutak u unutrasnjosti"),
+]
             db.add_all(stolovi)
             db.commit()
     finally:
