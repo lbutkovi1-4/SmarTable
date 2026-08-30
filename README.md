@@ -20,7 +20,7 @@ Web aplikacija za online rezervaciju stolova u restoranu i upravljanje rezervaci
 - **Frontend (Vercel):** https://smar-table.vercel.app
 - **Backend API:** https://smartable-eafa.onrender.com
 - **API Dokumentacija:** https://smartable-eafa.onrender.com/docs
-- **Video prezentacija:** []
+- **Video prezentacija:** [https://www.youtube.com/watch?v=IdEfbXY1g_o]
 
 ## Opis
 SmarTable je web sustav za online rezervaciju stolova u restoranu namijenjen dvjema grupama korisnika: registriranim korisnicima i administratorima.
